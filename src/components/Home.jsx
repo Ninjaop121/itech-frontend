@@ -40,7 +40,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* Search Bar Section */}
       <section className="container my-5">

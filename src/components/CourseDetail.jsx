@@ -97,15 +97,24 @@ const CourseDetail = () => {
               </div>
             )}
 
-            {activeTab === 'details' && (
-              <div className="tab-pane fade show active">
-                {/* Placeholder content for reviews and syllabus */}
-                <h5>Course Syllabus</h5>
-                <p>Coming soon...</p>
-                <h5>Student Reviews</h5>
-                <p>Coming soon...</p>
-              </div>
-            )}
+{activeTab === 'details' && (
+  <div className="tab-pane fade show active">
+    <h5>Course Syllabus</h5>
+    {course.syllabus && course.syllabus.length > 0 ? (
+      <ul className="list-group">
+        {course.syllabus.map((topic, index) => (
+          <li key={index} className="list-group-item">
+            {topic}
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>No syllabus available.</p>
+    )}
+  </div>
+)}
+
+
           </div>
 
           <div className="d-flex flex-column flex-md-row justify-content-between mt-4">

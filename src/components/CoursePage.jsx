@@ -10,6 +10,7 @@ const CoursePage = () => {
     { name: 'Cloud Computing', value: 'cloud' },
     { name: 'Cybersecurity', value: 'cybersecurity' },
   ];
+  
 
   return (
     <div className="container my-5">
@@ -23,5 +24,6 @@ const CoursePage = () => {
     </div>
   );
 };
+
 
 export default CoursePage;
